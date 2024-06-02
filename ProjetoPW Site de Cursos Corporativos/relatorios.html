@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios de Equipe</title>
+    <link rel="stylesheet" href="styles5.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" href="assets/k_logo_miniatura.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Relatórios de Equipe</h1>
+        <a href="index.html" class="btn" id="voltarBtn">voltar</a>
+    </header>
+
+    <div id="content">
+        <h1>Selecione uma Equipe</h1>
+        <select id="selecionar_time" onchange="atualiTab()">
+            <option value="">Selecione uma equipe</option>
+            <option value="time1">Equipe 1</option>
+            <option value="time2">Equipe 2</option>
+            <option value="time3">Equipe 3</option>
+        </select>
+
+        <canvas id="tabela" width="250" height="68" ></canvas>
+    </div>
+
+    <script src="relatorio.js"></script>
+</body>
+</html>

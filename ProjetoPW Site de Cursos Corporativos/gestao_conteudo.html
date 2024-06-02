@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Conteúdo de Treinamento</title>
+    <link rel="stylesheet" href="styles6.css">
+    <link rel="icon" href="assets/k_logo_miniatura.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <h1>Gerenciamento de Conteúdo de Treinamento</h1>
+        <a href="index.html" class="btn" id="voltarBtn">voltar</a>
+    </header>
+    <div class="container">
+        
+        <div class="team-selection">
+            <h2>Selecione a Equipe  //</h2>
+            <select id="selecionarTime" onchange="mostrar()">
+                <option value="">Selecione uma equipe</option>
+                <option value="teamA">Equipe A</option>
+                <option value="teamB">Equipe B</option>
+                <option value="teamC">Equipe C</option>
+            </select>
+        </div>
+
+        <div class="team-content">
+            <h2>Conteúdos da Equipe</h2>
+            <div id="containerTime">
+                <!-- Conteúdos da equipe selecionada serão exibidos aqui -->
+            </div>
+            <div>
+                <h3>Adicionar Novo Conteúdo</h3>
+                <input type="file" id="arquivosInput">
+                <button onclick="colocarArquivos()">Adicionar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="GestaoConteudo.js"></script>
+</body>
+</html>
