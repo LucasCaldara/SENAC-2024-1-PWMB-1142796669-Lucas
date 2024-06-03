@@ -24,7 +24,12 @@ document.getElementById('relatorioButton').addEventListener('click', function ()
 document.getElementById('gestaoButton').addEventListener('click', function () {
     window.location.href = 'gestao_conteudo.html';
 });
-
+document.getElementById('sobreButton').addEventListener('click', function () {
+    window.location.href = 'sobre.html';
+});
+document.getElementById('contatoButton').addEventListener('click', function () {
+    window.location.href = 'contato.html';
+});
 
 if (usuarioLogado() || usuarioADM()) {
     substituirBotoes();
